@@ -1,5 +1,75 @@
+/********** Base styles **********/
 * {
-    margin: 0;
-    font-family: "Comic Sans MS";
+    box-sizing: border-box;
 }
+ 
+body {
+    background-color: cornflowerblue;
+    padding: 10px;
+}
+
+h1 {
+    padding: 5px;
+    text-align: center;
+    font-family: "Comic Sans Ms";
+    font-size: 2rem;
+}
+
+
+
+.row {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: 100%;
+}
+
+.row h1{
+    margin: 0;
+    float: right;
+    color: #cccccc;
+    background-color: aquamarine;
+    border-bottom: 1px solid black;
+    border-left: 1px solid black;
+    
+}
+
+.col-lg-12,
+.col-md-6,
+.col-sm-4 {
+    
+    margin: 0;
+}
+
+.wrapper {
+
+    background-color: aqua;
+    margin: 10px;
+    border: 1px solid black;
+    border-radius: 3px;
+}
+
+p{
+    font-size: 1rem;
+    clear: right;
+    margin: 10px;
+    width: 90%;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    height: auto;
+    padding: 5px;
+    
+}
+
+
+
+
+
+
+@media(min-width: 992px){
+    .col-lg-12, .col-md-6, .col-sm-4 {
+        width: 33.33%;
+        float: right;
+    }
+}
+
 
