@@ -25,12 +25,25 @@ h1 {
 .row h1{
     margin: 0;
     float: right;
-    color: #cccccc;
-    background-color: aquamarine;
-    border-bottom: 1px solid black;
-    border-left: 1px solid black;
-    
+    font-family: 'Montserrant', sans-serif;
 }
+
+#sect-1 h1{
+    background-color:  #f542c8;
+    color: yellow;
+}
+
+#sect-2 h1{
+    background-color:  #5ef784;
+    color: #a35ef7;
+}
+
+#sect-3 h1{
+    background-color:  #f7bd5e;
+    color: #000;
+}
+
+
 
 .col-lg-12,
 .col-md-6,
@@ -42,7 +55,7 @@ h1 {
 .wrapper {
 
     background-color: aqua;
-    margin: 10px;
+    margin: 0.5rem;
     border: 1px solid black;
     border-radius: 3px;
 }
@@ -66,10 +79,22 @@ p{
 
 
 @media(min-width: 992px){
-    .col-lg-12, .col-md-6, .col-sm-4 {
+    .col-sm-4 {
         width: 33.33%;
         float: right;
     }
 }
 
+@media(min-width: 768px) and (max-width: 991px){
+    .col-md-6 {
+        width: 50%;
+        float: right;
+    }
 
+    .col-lg-12 {
+       width: 100%;
+       clear: both;
+       position: relative;
+       top: 0.5rem;
+    }
+}
