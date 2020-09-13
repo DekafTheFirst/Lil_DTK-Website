@@ -1,88 +1,50 @@
-/********** Base styles **********/
 * {
-    box-sizing: border-box;
+    margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
 }
- 
+
 body {
-    background-color: cornflowerblue;
-    padding: 10px;
+    background-color: 	#FFFF99;
 }
-
-h1 {
-    padding: 5px;
-    text-align: center;
-    font-family: "Comic Sans Ms";
-    font-size: 2rem;
-}
-
-
 
 .row {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: 90%;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.container {
+    display: inline-block;
     width: 100%;
-}
-
-.row h1{
-    margin: 0;
-    float: right;
-    font-family: 'Montserrant', sans-serif;
-}
-
-#sect-1 h1{
-    background-color:  #f542c8;
-    color: yellow;
-}
-
-#sect-2 h1{
-    background-color:  #5ef784;
-    color: #a35ef7;
-}
-
-#sect-3 h1{
-    background-color:  #f7bd5e;
-    color: #000;
-}
-
-
-
-.col-lg-12,
-.col-md-6,
-.col-sm-4 {
-    
-    margin: 0;
+ 
 }
 
 .wrapper {
-
-    background-color: aqua;
-    margin: 0.5rem;
-    border: 1px solid black;
-    border-radius: 3px;
+    background-color: #FFFF94;
+    border: 1px solid #FFFF50;
+    margin: 5px;
 }
 
-p{
-    font-size: 1rem;
-    clear: right;
-    margin: 10px;
-    width: 90%;
-    position: relative;
-    margin-left: auto;
-    margin-right: auto;
-    height: auto;
+.wrapper p {
+    font-size: 1.2em;
+    padding: 10px;
+    clear: both;
+}
+
+.wrapper h1 {
+    font-size: 2rem;
     padding: 5px;
-    
+    float: right;
 }
 
+@media (min-width: 992px){
+  .col-lg-4{
+    display: inline-block;
+    width: 33%;
+  }
 
-
-
-
-
-@media(min-width: 992px){
-    .col-sm-4 {
-        width: 33.33%;
-        float: right;
-    }
 }
 
 @media(min-width: 768px) and (max-width: 991px){
@@ -91,10 +53,21 @@ p{
         float: right;
     }
 
-    .col-lg-12 {
-       width: 100%;
-       clear: both;
-       position: relative;
-       top: 0.5rem;
+    .col-md-12 {
+        width: 100%;
+        clear: both;
     }
 }
+
+@media (max-width: 767px){
+    .col-sm-12 {
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+
+
+
+
